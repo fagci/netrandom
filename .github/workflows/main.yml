@@ -1,6 +1,7 @@
 name: Netrandom
 
 on:
+  workflow_run:
   schedule:
     - cron: '*/5 * * * *'
 
