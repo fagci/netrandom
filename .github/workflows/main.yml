@@ -2,6 +2,8 @@ name: Netrandom
 
 on:
   workflow_run:
+    workflows: [Build]
+    types: [completed]
   schedule:
     - cron: '*/5 * * * *'
 
